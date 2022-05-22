@@ -52,7 +52,7 @@ jobs:
     needs:
       - formatting
     if: needs.formatting.result == 'success'
-    if: github.repository_owner == 'pyvisa'
+    if: github.repository == 'pyvisa/pyvisa'
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
